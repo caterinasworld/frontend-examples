@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Grid Example</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <style>
+      .row > * {
+        height: 150px;
+        border: 1px solid white;
+        background-color: purple;
+        color: white;
+        font-size: 1.4rem;
+      }
+      .col-3 {
+        background-color: slateblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mx-auto mt-4">
+      <div class="row">
+        <div class="col-md-12">Header</div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">Aside</div>
+        <div class="col-md-10">
+          Main Section
+          <div class="row">
+            <div class="col-3">Card</div>
+            <div class="col-3">Card</div>
+            <div class="col-3">Card</div>
+            <div class="col-3">Card</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">Footer</div>
+      </div>
+    </div>
+  </body>
+</html>
