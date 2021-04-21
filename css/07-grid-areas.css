@@ -22,12 +22,6 @@
   grid-area: footer;
 }
 
-.grid-item {
-  background-color: purple;
-  color: white;
-  padding: 10px;
-}
-
 .grid-container {
   display: grid;
   height: 97vh;
