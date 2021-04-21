@@ -2,7 +2,8 @@
 
 const quote1 = 'All that is gold does not glitter';
 
-const quote2 = 'Not all those who wander are lost';
+// prettier-ignore
+const quote2 = "Not all those who wander are lost";
 
 const quote3 = `All that is gold does not glitter,
 Not all those who wander are lost;
@@ -57,5 +58,11 @@ console.log('Substring from index 0 to index 5:', quote1.substr(0, 5));
 console.log('Quote ends with "glitter":', quote1.endsWith('glitter'));
 // Quote ends with "glitter": true
 
-console.log('Quote ends with "gold":', quote1.startsWith('gold'));
-// Quote ends with "gold": false
+console.log('Quote starts with "gold":', quote1.startsWith('gold'));
+// Quote starts with "gold": false
+
+console.log('Split quote:', quote1.split(' '));
+// [ 'All', 'that', 'is', 'gold', 'does', 'not', 'glitter' ]
+
+console.log('Join with dashes:', quote1.split(' ').join(' - '));
+// All - that - is - gold - does - not - glitter
