@@ -1,23 +1,17 @@
-// whenever the user enters input text, copy the user input to the output area
+// Exercise #1:
+// When the user clicks the 'copy' button, copy the user input to the output area
 
 // fetch JavaScript objects representing specific elements in the DOM
 
-let userInput = document.querySelector('#input');
-let copy = document.querySelector('#copy');
+// add an event listener on the target element
+
+// callback function to handle event
+
+// Exercise #2:
+// When the user enters input text, copy the user input to the output area
+
+// fetch JavaScript objects representing specific elements in the DOM
 
 // add an event listener on the target element
 
-copy.addEventListener('click', handleClick);
-
-// add a callback function to handle event
-
-function handleClick(event) {
-  console.log(userInput.value);
-  console.log(copy.value);
-
-  let element = document.createElement('div');
-
-  element.textContent = userInput.value;
-
-  document.querySelector('main').append(element);
-}
+// callback function to handle event

@@ -8,12 +8,10 @@
       input {
         margin-bottom: 1.5em;
       }
-
       label {
         display: block;
       }
-
-      #output {
+      .output {
         width: 150px;
         height: 20px;
         background-color: lightyellow;
@@ -23,10 +21,20 @@
   </head>
   <body>
     <main>
-      <label for="input">Input</label>
-      <input class="userInput" id="input" type="text" />
-      <input type="button" value="Copy Value" id="copy" />
-      <label for="output">Output</label>
+      <section>
+        <h2>Click Event</h2>
+        <label for="userInput1">Input</label>
+        <input id="userInput1" type="text" />
+        <input type="button" value="Copy Text" id="copy" />
+        <label for="output">Output</label>
+        <div id="output" class="output"></div>
+      </section>
+      <section id="inputEventExample">
+        <h2>Input Event</h2>
+        <label for="userInput2">Input</label>
+        <input id="userInput2" type="text" />
+        <label for="output">Output</label>
+      </section>
     </main>
   </body>
 </html>
