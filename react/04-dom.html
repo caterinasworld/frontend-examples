@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM vs Virtual DOM</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+    <script type="text/babel">
+      const root = document.getElementById('root');
+      const app = document.getElementById('app');
+
+      function getTimeJS() {
+        const time = new Date().toLocaleTimeString();
+        const element = `<h3>Vanilla JavaScript</h3>
+          <p>Current time: ${time}</p>`;
+        root.innerHTML = element;
+      }
+
+      function getTimeReact() {
+        const current = new Date().toLocaleTimeString();
+        const element = (
+          <div className='time-block'>
+            <h3>React</h3>
+            <p>Current time: {current}</p>
+          </div>
+        );
+        ReactDOM.render(element, app);
+      }
+
+      setInterval(getTimeJS, 1000);
+      setInterval(getTimeReact, 1000);
+    </script>
+  </body>
+</html>

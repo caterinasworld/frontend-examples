@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React - Class Component vs Functional Component</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+    <script type="text/babel">
+      // create a class component and use component lifecycle methods
+      class ClassComponent extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {
+            count: 0,
+          };
+        }
+
+        componentDidMount() {
+          console.log('component did mount');
+        }
+
+        componentDidUpdate() {
+          console.log('component did update');
+        }
+
+        render() {
+          return (
+            <div>
+              <h3>Class Component</h3>
+              <p>You clicked {this.state.count} times</p>
+              <button
+                onClick={() => this.setState({ count: this.state.count + 1 })}>
+                Click me
+              </button>
+            </div>
+          );
+        }
+      }
+
+      // create a function component and use hooks
+      function FunctionComponent() {
+        const [count, setCount] = React.useState(0);
+        const [query, setQuery] = React.useState('hello world');
+
+        React.useEffect(() => {
+          console.log('running useEffect');
+        }, [count]);
+
+        return (
+          <div>
+            <h3>Function Component</h3>
+            <p>You clicked {count} times</p>
+            <button onClick={() => setCount(count + 1)}>Click me</button>
+          </div>
+        );
+      }
+
+      ReactDOM.render(<ClassComponent />, document.getElementById('root'));
+      ReactDOM.render(<FunctionComponent />, document.getElementById('app'));
+    </script>
+  </body>
+</html>
