@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Selectors Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <ul id="list">
+        <li class="one">One</li>
+        <li class="two">
+          Two
+          <ul>
+            <li class="three">Three</li>
+            <li class="four">
+              Four
+              <ul>
+                <li class="five">Five</li>
+                <li class="six">Six</li>
+                <li class="seven">Seven</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="eight">Eight</li>
+      </ul>
+    </main>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        console.log($('#list').find('li'));
+        console.log($('#list').find('li').eq(0));
+        console.log($('#list').find('li:nth-child(2n)'));
+        console.log($('#list').children());
+        console.log($('#list').parent());
+        console.log($('#list').parents());
+        console.log($('li.one').siblings());
+        console.log($('li.two').next());
+        console.log($('li.four').prev());
+        console.log($('li.five').next().prev());
+        console.log($('li.seven').siblings());
+      });
+    </script>
+  </body>
+</html>
