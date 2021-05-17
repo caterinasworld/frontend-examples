@@ -1,5 +1,11 @@
+// An API of Fire and Ice
+// Endpoints for all books and book 1
 const urlOne = 'https://anapioficeandfire.com/api/books/1/';
 const urlAll = 'https://anapioficeandfire.com/api/books/';
+
+// Dog Facts API - CORS issue
+const urlDogs =
+  'https://dog-facts-api.herokuapp.com/api/v1/resources/dogs/all/facts/';
 
 let fetchOneExample = (url) => {
   fetch(url)
@@ -28,6 +34,15 @@ let fetchAllExample = (url) => {
     .catch((error) => console.log(error));
 };
 
-fetchOneExample(urlOne);
+let fetchDogFacts = (url) => {
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch((error) => console.log(error));
+};
+
+fetchDogFacts(urlOne);
 
 fetchAllExample(urlAll);
+
+fetchDogFacts(urlDogs);
