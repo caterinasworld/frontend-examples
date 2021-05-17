@@ -1,0 +1,20 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.starships {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.starship {
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  margin: 5px;
+  padding: 5px 10px;
+  border: 1px solid black;
+  text-align: center;
+}

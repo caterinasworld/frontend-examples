@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> matches the screenshot 1`] = `
+<Fragment>
+  <h1
+    className="heading"
+  >
+    SWAPI Starships - CRA with Class Components
+  </h1>
+  <p>
+    Data Loading...
+  </p>
+  <Starship
+    starshipData={Array []}
+  />
+</Fragment>
+`;
