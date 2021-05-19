@@ -7,7 +7,7 @@ const urlAll = 'https://anapioficeandfire.com/api/books/';
 const urlDogs =
   'https://dog-facts-api.herokuapp.com/api/v1/resources/dogs/all/facts/';
 
-let fetchOneExample = (url) => {
+let fetchOneBook = (url) => {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
@@ -19,7 +19,7 @@ let fetchOneExample = (url) => {
     .catch((error) => console.log(error));
 };
 
-let fetchAllExample = (url) => {
+let fetchAllBooks = (url) => {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
@@ -41,8 +41,8 @@ let fetchDogFacts = (url) => {
     .catch((error) => console.log(error));
 };
 
-fetchDogFacts(urlOne);
+fetchOneBook(urlOne);
 
-fetchAllExample(urlAll);
+fetchAllBooks(urlAll);
 
 fetchDogFacts(urlDogs);
