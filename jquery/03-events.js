@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  let count = 0;
   $('#input')
     .css({
       width: '200px',
@@ -6,6 +7,7 @@ $(document).ready(function () {
       fontSize: '2em',
     })
     .on('click', function () {
+      $(this).val('clicked: ' + count++);
       console.log('this is a click event');
     })
     .on('mouseover', function () {
