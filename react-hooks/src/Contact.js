@@ -13,7 +13,7 @@ export default function Contact() {
       <h1>Contact</h1>
       <div>This is the Contact page </div>
       <div>Context: {count}</div>
-      <button class='btn btn-primary' onClick={handleClick}>
+      <button className='btn btn-primary' onClick={handleClick}>
         Update
       </button>
     </div>
