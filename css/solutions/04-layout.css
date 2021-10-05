@@ -2,16 +2,13 @@
   --gold: #ffd700;
 }
 
-body {
-  color: var(--black);
-}
-
 header,
 section,
 aside {
   box-sizing: border-box;
   padding: 10px;
   border: 4px solid var(--black);
+  color: var(--black);
 }
 
 header {
