@@ -1,7 +1,5 @@
 * {
   font-family: sans-serif;
-  color: white;
-  font-size: 1.6em;
 }
 
 .ball {
@@ -11,6 +9,8 @@
   height: 200px;
   padding: 35px 70px;
   border-radius: 50%;
+  color: white;
+  font-size: 7.5rem;
 }
 
 .ball-1 {

@@ -1,5 +1,6 @@
 :root {
   --white: white;
+  --gray: #333333;
   --purple: #663399;
   --lavender: #b3b3e6;
 }
@@ -7,6 +8,10 @@
 body {
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.2em;
+}
+
+h1 {
+  color: var(--gray);
 }
 
 div {

@@ -62,7 +62,7 @@ tr.second {
 
 /* general sibling selector */
 .second ~ tr {
-  color: var(--orange);
+  color: var(--darkorange);
 }
 
 /* direct sibling selector */

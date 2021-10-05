@@ -24,7 +24,7 @@
 
 .grid-container {
   display: grid;
-  height: 97vh;
+  height: 88vh;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(7, 1fr);
   gap: 10px;
