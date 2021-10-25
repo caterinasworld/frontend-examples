@@ -1,6 +1,3 @@
-const today = new Date();
-console.log(`Today's date is ${today}`);
-
 const num1 = 15;
 const num2 = 15.0;
 const num3 = 15e8;

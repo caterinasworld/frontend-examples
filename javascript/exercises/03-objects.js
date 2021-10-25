@@ -1,21 +1,21 @@
 let result = {};
 
-let insertItem = (key, value) => {
+const insertItem = (key, value) => {
   // insertItem the property with key and value into result
   return key;
 };
 
-let deleteItem = (key) => {
+const deleteItem = (key) => {
   // remove the property with key from result
   return key;
 };
 
-let lookupItem = (key) => {
+const lookupItem = (key) => {
   // return the value from result that is associated with key
   return key;
 };
 
-let printItems = () => {
+const printItems = () => {
   // return a string of the concatenated key in result, separated by commas
 };
 
