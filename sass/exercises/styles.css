@@ -1,5 +1,5 @@
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 header {
@@ -9,6 +9,6 @@ header {
 
 header h1 {
   font-size: 22.4px;
-  color: #f16baa;
+  color: green;
 }
-/*# sourceMappingURL=exercise.css.map */
+/*# sourceMappingURL=styles.css.map */
