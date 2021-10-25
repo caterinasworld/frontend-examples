@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(() => {
   let random = () => Math.random() * 255;
 
   for (let i = 0; i < 600; i++) {
@@ -18,8 +18,8 @@ $(document).ready(function () {
             .data({
               item: i,
             })
-            .on('click', function () {
-              console.log('mouse clicked', $(this).data('item'));
+            .on('click', () => {
+              console.log('Mouse clicked', $(this).data('item'));
             })
             .on('mouseover', function () {
               $(this).css({
