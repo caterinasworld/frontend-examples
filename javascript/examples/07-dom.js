@@ -1,6 +1,3 @@
-// writing directly to the DOM
-document.write('Writing to the DOM...');
-
 // Appending elements to the DOM
 let main = document.querySelector('main');
 
@@ -17,16 +14,23 @@ main.append(document.createElement('br'));
 
 let button = document.createElement('button');
 button.setAttribute('id', 'example');
+button.setAttribute('class', 'btn');
 button.textContent = 'Click Me!';
 button.style.border = 0;
 button.style.padding = '5px 10px';
-button.style.backgroundColor = 'darkgreen';
-button.style.color = 'white';
 button.style.borderRadius = '5px';
 main.append(button);
 
 // Adding an event listener to the previously created button
+button.addEventListener('click', handleClick);
+
+function handleClick(event) {
+  console.log('This is the click event!');
+  console.log(event);
+}
+
+// Adding an event listener to the previously created button - with event handler
 document.getElementById('example').onclick = function (event) {
   console.log(event);
-  alert('the button has been pressed');
+  alert('The button has been pressed!');
 };

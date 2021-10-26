@@ -40,7 +40,7 @@ console.log(author);
 // String Methods
 
 console.log('Length of quote:', quote1.length);
-// Length of quote: 34
+// Length of quote: 33
 
 console.log('Index of "gold":', quote1.indexOf('gold'));
 // Index of "gold": 12
