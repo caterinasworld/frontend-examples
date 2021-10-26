@@ -1,6 +1,7 @@
 node_modules/
 .vscode/
 .DS_Store
-dist/
-typescript/.cache/
 
+# sass files
+sass/*/*/*.css
+sass/*/*/*.css.map
