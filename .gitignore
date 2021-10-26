@@ -3,5 +3,7 @@ node_modules/
 .DS_Store
 
 # sass files
-sass/*/*/*.css
+sass/*/styles.css
+sass/*/*.css.map
+sass/*/*/styles.css
 sass/*/*/*.css.map
