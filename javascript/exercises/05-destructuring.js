@@ -13,9 +13,7 @@ const sansa = {
       mother: 'Catelyn Tully',
       father: 'Eddard Stark',
     },
-    animals: {
-      direwolf: 'Lady',
-    },
+    animals: ['Lady'],
   },
 };
 
@@ -28,17 +26,16 @@ const daenerys = {
       mother: 'Queen Rhaella',
       father: 'King Aerys II Targaryen',
     },
-    animals: {
-      dragons: 'Drogon',
-    },
+    animals: ['Drogon', 'Rhaegal', 'Viserion'],
   },
 };
 
 console.log(destructureItems(sansa));
-// Sansa Stark
-//   daughter of
-//   Catelyn Tully and Eddard Stark
+// Sansa Stark of house Winterfell
+//     parents: Catelyn Tully and Eddard Stark
+//     allegiance(s): Lady
+
 console.log(destructureItems(daenerys));
-// Daenerys Targaryen
-//   daughter of
-//   Queen Rhaella and King Aerys II Targaryen
+// Daenerys Targaryen of house Targaryen
+//     parents: Queen Rhaella and King Aerys II Targaryen
+//     allegiance(s): Drogon, Rhaegal, Viserion
