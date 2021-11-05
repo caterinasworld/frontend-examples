@@ -31,6 +31,10 @@ body {
   color: var(--gray1);
 }
 
+h1 {
+  text-align: center;
+}
+
 .form {
   width: 400px;
 }
