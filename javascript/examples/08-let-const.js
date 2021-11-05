@@ -1,3 +1,5 @@
+// JavaScript 08 - Let Const
+
 if (true) {
   let arya = 'Arya';
   console.log(arya);

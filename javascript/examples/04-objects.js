@@ -1,3 +1,5 @@
+// JavaScript 04 - Objects
+
 let objectsExample1 = () => {
   let obj = {
     a: 'hello',

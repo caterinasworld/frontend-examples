@@ -1,3 +1,5 @@
+// JavaScript 10 - Spread
+
 const houses = [
   'Barantheon',
   'Bolton',

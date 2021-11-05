@@ -1,3 +1,5 @@
+// JavaScript 11 - Destructuring
+
 const character = {
   first: 'Daenerys',
   last: 'Targaryen',
@@ -9,7 +11,7 @@ const character = {
 };
 
 // Destructuring the full name
-const { first, last, house } = character;
+const { first, last, house: allegiance } = character;
 
-console.log(`I am ${first} ${last} of house ${house}.`);
-// I am Daenerys Targaryen of house Targaryen.
+console.log(`${first} ${last} of house ${allegiance}.`);
+// Daenerys Targaryen of house Targaryen.

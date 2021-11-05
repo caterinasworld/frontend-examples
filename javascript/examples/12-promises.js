@@ -1,3 +1,5 @@
+// JavaScript 12 - Promises
+
 const promiseExample = () => {
   const promise = new Promise((resolve, reject) => {
     if (true) {

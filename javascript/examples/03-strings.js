@@ -1,3 +1,5 @@
+// JavaScript 03 - Strings
+
 // Defining Strings
 
 const quote1 = 'All that is gold does not glitter';

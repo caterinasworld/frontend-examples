@@ -1,3 +1,5 @@
+// JavaScript 12 - Filter
+
 const colors = ['red', 'yellow', 'blue', 'magenta', 'black', 'aquamarine'];
 
 const long = colors.filter((word) => word.length > 6);

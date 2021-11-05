@@ -1,3 +1,5 @@
+// JavaScript 06 - Types
+
 console.log(typeof 42);
 // number
 

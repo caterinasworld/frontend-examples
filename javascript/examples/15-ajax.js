@@ -1,3 +1,5 @@
+// JavaScript 15 - Ajax / Asynchronous JavaScript
+
 // An API of Fire and Ice
 // Endpoint for the first book
 const url = 'https://anapioficeandfire.com/api/books/1/';

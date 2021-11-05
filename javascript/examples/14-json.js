@@ -1,3 +1,5 @@
+// JavaScript 12 - JSON
+
 const obj = {
   name: 'Spongebob Squarepants',
   height: '4',
