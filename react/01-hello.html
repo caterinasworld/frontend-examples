@@ -3,27 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>React - Hello World</title>
-  </head>
-  <body>
-    <div id="root"></div>
+    <title>React 01 - Hello World</title>
+    <link rel="stylesheet" href="../_styles/styles.css" />
     <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
-    <script type="text/babel">
-      function House(props) {
-        return (
-          <React.Fragment>
-            <div>House {props.name}</div>
-            <div>Motto: {props.motto}</div>
-          </React.Fragment>
-        );
-      }
-
-      ReactDOM.render(
-        <House name='Stark' motto='Winter is Coming' />,
-        document.getElementById('root')
-      );
-    </script>
+    <script defer type="text/babel" src="01-hello.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>React 01 - Hello World</h1>
+      <div id="app"></div>
+    </main>
   </body>
 </html>

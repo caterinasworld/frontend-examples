@@ -3,54 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>React - Create Elements and JSX</title>
-  </head>
-  <body>
-    <div id="rootJs">
-      <h3>Vanilla JavaScript</h3>
-    </div>
-    <div id="rootReact"></div>
-    <div id="rootJSX"></div>
+    <title>React 02 - JSX</title>
+    <link rel="stylesheet" href="../_styles/styles.css" />
     <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
-    <script type="text/babel">
-      const houses = ['Stark', 'Greyjoy', 'Lannister'];
-
-      // Vanilla JavaScript
-
-      houses.forEach((item) => {
-        let div = document.createElement('div');
-        div.textContent = item;
-        document.getElementById('rootJs').append(div);
-      });
-
-      // React.createElement
-      let div = React.createElement(
-        'div',
-        { className: 'house' },
-        React.createElement('h3', {}, 'React - createElement()'),
-        React.createElement('div', {}, 'Stark'),
-        React.createElement('div', {}, 'Greyjoy'),
-        React.createElement('div', {}, 'Lannister')
-      );
-
-      ReactDOM.render(div, document.getElementById('rootReact'));
-
-      // JSX
-      let block = (
-        <>
-          <h3>React - JSX</h3>
-          <div className='houses'>
-            <div>Stark</div>
-            <div>Greyjoy</div>
-            <div>Lannister</div>
-            <div>Targaryen</div>
-          </div>
-        </>
-      );
-
-      ReactDOM.render(block, document.getElementById('rootJSX'));
-    </script>
+    <script defer type="text/babel" src="02-jsx.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>React 02 - JSX</h1>
+      <div id="appJs">
+        <h2>Vanilla JavaScript</h2>
+      </div>
+      <div id="appReact"></div>
+      <div id="appJSX"></div>
+      <div id="appJSX2"></div>
+    </main>
   </body>
 </html>
