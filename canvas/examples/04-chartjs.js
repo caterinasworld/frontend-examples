@@ -1,3 +1,6 @@
+// Global Settings
+Chart.defaults.global.defaultFontColor = '#121212';
+
 //
 // Setting up a Horizontal Bar Chart
 //
