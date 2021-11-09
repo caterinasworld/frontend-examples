@@ -4,7 +4,7 @@
 
 :root {
   --white: #fcfcfc;
-  --black: #040404;
+  --black: #121212;
 
   --gray1: #333333;
   --gray2: #555555;
@@ -32,6 +32,7 @@ body {
 }
 
 h1 {
+  color: var(--black);
   text-align: center;
 }
 
