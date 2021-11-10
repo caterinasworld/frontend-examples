@@ -22,7 +22,8 @@ export default function StarshipFleet() {
 
   return (
     <section>
-      <h1>SWAPI Starships - CRA with Hooks</h1>
+      <h1>SWAPI Starships</h1>
+      <h2>CRA with Hooks</h2>
 
       {isLoading && <p>Loading...</p>}
 

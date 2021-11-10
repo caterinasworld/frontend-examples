@@ -34,7 +34,8 @@ class App extends React.Component {
 
     return (
       <React.Fragment>
-        <h1 className='heading'>SWAPI Starships - CRA with Class Components</h1>
+        <h1 className='h1'>SWAPI Starships</h1>
+        <h2 className='h2'>CRA with Class Components</h2>
         {!isLoaded && <p>Data Loading...</p>}
 
         <Starship starshipData={starships} />
