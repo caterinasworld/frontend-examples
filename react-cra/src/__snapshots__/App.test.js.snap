@@ -3,15 +3,21 @@
 exports[`<App /> matches the screenshot 1`] = `
 <Fragment>
   <h1
-    className="heading"
+    className="h1"
   >
-    SWAPI Starships - CRA with Class Components
+    Star Wars - Starships
   </h1>
-  <p>
-    Data Loading...
-  </p>
-  <Starship
-    starshipData={Array []}
-  />
+  <h2
+    className="h2"
+  >
+    Create React App with Class Components
+  </h2>
+  <AppClassDemo />
+  <h2
+    className="h2"
+  >
+    Create React App with Functional Components
+  </h2>
+  <AppFunctionDemo />
 </Fragment>
 `;

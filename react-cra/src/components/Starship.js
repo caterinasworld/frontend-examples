@@ -1,9 +1,6 @@
 import React from 'react';
 
-export default function Starship(props) {
-  // let element = "Hello Starship";
-  // console.log(props.starshipData);
-
+function Starship(props) {
   let element = props.starshipData.map((item, index) => {
     return (
       <div className='starship' key={index}>
@@ -17,4 +14,4 @@ export default function Starship(props) {
   return <div className='starships'>{element}</div>;
 }
 
-// export default Starship;
+export default Starship;

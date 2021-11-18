@@ -1,11 +1,34 @@
+:root {
+  --black: #121212;
+  --yellow: #dac50e;
+  --darkyellow: #bdab0d;
+  --white: #efefef;
+}
+
 * {
   box-sizing: border-box;
   font-family: sans-serif;
   text-align: center;
 }
 
-.h1 {
-  margin-top: 3rem;
+body {
+  background-color: var(--black);
+}
+
+.h1,
+.h2 {
+  margin: 3rem;
+  color: var(--white);
+  font-size: 3em;
+}
+
+.h2 {
+  font-size: 2em;
+}
+
+.loading {
+  width: 10%;
+  height: 10%;
 }
 
 .starships {
@@ -20,11 +43,13 @@
   width: 300px;
   margin: 0.5rem;
   padding: 0.5rem 1rem;
-  border: 1px solid black;
+  border: 2px solid var(--yellow);
+  background-color: var(--yellow);
+  color: var(--black);
   text-align: center;
 }
 
 .starship:hover {
-  border: 2px solid black;
-  background-color: lightblue;
+  border: 2px solid var(--black);
+  background-color: var(--darkyellow);
 }
